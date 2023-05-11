@@ -1,0 +1,42 @@
+.App{
+  background-color: blueviolet;
+  height: 100vh;
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.time{
+  margin: 10px;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+  background: linear-gradient(to bottom, #3525be 0%, #363537 100%)
+  
+}
+span{
+  font-size: 30px;
+}
+.AMPM{
+  margin: 10px;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+  background: linear-gradient(to bottom, #3525be 0%, #363537 100%)
+
+}
+/* .dayDiv{
+  position: relative;
+} */
+.day{
+  /* bottom: 0; */
+  top:35rem;
+  left:55rem;
+  background: linear-gradient(to bottom, #3525be 0%, #363537 100%);
+  padding:20px;
+  color: white;
+}
+h1{
+  text-align: center;
+}
