@@ -3,15 +3,15 @@ import "./App.css";
 
 function App() {
   const date = new Date();
-  const days = [
-    "SUNDAY",
-    "MONDAY",
-    "TUESDAY",
-    "WEDNESDAY",
-    "THURSDAY",
-    "FRIDAY",
-    "SATURDAY",
-  ];
+  // const days = [
+  //   "SUNDAY",
+  //   "MONDAY",
+  //   "TUESDAY",
+  //   "WEDNESDAY",
+  //   "THURSDAY",
+  //   "FRIDAY",
+  //   "SATURDAY",
+  // ];
   // console.log(date.getTimezoneOffset())
   const [currentDate, setCurrentDate] = useState({
     hours: 0,
@@ -23,15 +23,15 @@ function App() {
       hours: date.getHours(),
       minutes: date.getMinutes(),
       seconds: date.getSeconds(),
-    });
+    },[date]);
   });
 
-  function Hour(h) {
-    if (h >= 12) {
-      return h - 12;
-    }
-    return h;
-  }
+  // function Hour(h) {
+  //   if (h >= 12) {
+  //     return h - 12;
+  //   }
+  //   return h;
+  // }
 
   const amPm = currentDate.hours >= 12 ? "PM" : "AM";
 
