@@ -23,7 +23,7 @@ function App() {
       hours: date.getHours(),
       minutes: date.getMinutes(),
       seconds: date.getSeconds(),
-    },[date]);
+    });
   });
 
   // function Hour(h) {
