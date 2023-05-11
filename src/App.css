@@ -1,42 +1,78 @@
-.App{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
   background-color: blueviolet;
   height: 100vh;
   /* position: relative; */
+}
+.timeContainer {
+  height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.time{
+
+.time {
   margin: 10px;
   font-size: 50px;
   color: white;
   padding: 20px;
-  background: linear-gradient(to bottom, #3525be 0%, #363537 100%)
-  
+  background: linear-gradient(to bottom, #3525be 0%, #363537 100%);
 }
-span{
+span {
   font-size: 30px;
 }
-.AMPM{
+.AMPM {
   margin: 10px;
   font-size: 50px;
   color: white;
   padding: 20px;
-  background: linear-gradient(to bottom, #3525be 0%, #363537 100%)
-
+  background: linear-gradient(to bottom, #3525be 0%, #363537 100%);
 }
 /* .dayDiv{
   position: relative;
 } */
-.day{
-  /* bottom: 0; */
-  top:35rem;
-  left:55rem;
-  background: linear-gradient(to bottom, #3525be 0%, #363537 100%);
-  padding:20px;
-  color: white;
+.day {
+  text-align: center;
+  color: rgba(53, 41, 169, 255);
 }
-h1{
+h1 {
   text-align: center;
 }
+
+@media screen and (min-width: 241px) and (max-width: 510px) {
+  .seconds {
+    display: none;
+  }
+  .secondSpan,
+  .thirdSpan {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 511px) and (max-width: 4000px) {
+  .day {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 240px) {
+  .seconds {
+    display: none;
+  }
+  .secondSpan,
+  .thirdSpan,
+  .firstSpan {
+    display: none;
+  }
+  .AMPM,
+  .time {
+    font-size: 30px;
+    margin: 5px;
+  }
+}
+
